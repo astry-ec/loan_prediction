@@ -27,4 +27,45 @@ This dataset is about past loans. The **Loan_train.csv** data set includes detai
 Model will predict the customer from **Loan_test.csv** whether they likely to "Paid Off" the loan or the loan will keep hanging on "Collection" after the due date
 
 ## 2. Data Visualization
+Insight derived from dataset to see hidden pattern on the data
 
+* Loan is paid off or no after due date based on basic loan amount. ( grouping by Gender, 0 = Male, 1 = Female)
+
+![Screenshot](https://github.com/astry-ec/loan_prediction/blob/main/images/gender.png)
+
+* Loan is paid off or no after due date based on age. ( grouping by Gender, 0 = Male, 1 = Female)
+
+![Screenshot](https://github.com/astry-ec/loan_prediction/blob/main/images/gender02.png)
+
+* Loan is paid off or no after due date based on day the loan took effect. ( grouping by Gender, 0 = Male, 1 = Female)
+
+![Screenshot](https://github.com/astry-ec/loan_prediction/blob/main/images/gender03.png)
+
+## 3. Feature Selection
+
+Based on insight on point 2. Feature Selection choosen are below
+'Principal','terms','age','Gender','weekend']]
+* Principal
+* Terms
+* Age
+* Gender
+* The day loan made (weekend or not)
+* Education
+
+## 4. Algorithm
+
+As mentioned, algorithm used are
+
+*   K Nearest Neighbor(KNN)
+*   Decision Tree
+*   Support Vector Machine
+*   Logistic Regression
+
+## 5. Evaluation Matrix
+
+Model will predict the customer from **Loan_test.csv** which is data that never seen by the models. 
+I perform Jaccard, F1 Score and Log Loss (only for Logistic Regression) Evaluation Matrix.
+
+Below is the result of the model evaluation
+
+![Screenshot](https://github.com/astry-ec/loan_prediction/blob/main/images/evaluation%20matrix%20models.png)
