@@ -41,7 +41,7 @@ Insight derived from dataset to see hidden pattern on the data
 
 ![Screenshot](https://github.com/astry-ec/loan_prediction/blob/main/images/gender03.png)
 
-## 3. Feature Selection
+## 3. Feature Selection and Preprocessing Data
 
 Based on insight on point 2. Feature Selection choosen are below
 'Principal','terms','age','Gender','weekend']]
@@ -51,6 +51,8 @@ Based on insight on point 2. Feature Selection choosen are below
 * Gender
 * The day loan made (weekend or not)
 * Education
+
+I used StandardScaler as preprocessing to Normalize the data
 
 ## 4. Algorithm
 
