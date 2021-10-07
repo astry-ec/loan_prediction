@@ -24,7 +24,7 @@ This dataset is about past loans. The **Loan_train.csv** data set includes detai
 | Education      | Education of applicant                                                                |
 | Gender         | The gender of applicant                                                               |
 
-Model will predict the customer from **Loan_test.csv** whether they likely to "Paid Off" the loan or the loan will keep hanging on "Collection"
+Model will predict the customer from **Loan_test.csv** whether they likely to "Paid Off" the loan or the loan will keep hanging on "Collection" after the due date
 
 ## 2. Data Visualization
 
